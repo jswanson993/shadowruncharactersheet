@@ -4,16 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
     tools:context=".MainActivity">
 
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_columnSpan="11"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_rowSpan="2"
         android:background="@android:color/black"
@@ -29,6 +27,7 @@
 
         <TextView
             android:id="@+id/Body_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -36,11 +35,11 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="B"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark" />
 
         <TextView
             android:id="@+id/Agility_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -48,11 +47,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="A"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark" />
 
         <TextView
             android:id="@+id/Reaction_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -60,11 +59,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="R"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <TextView
             android:id="@+id/Strength_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -72,11 +71,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="S"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <TextView
             android:id="@+id/Will_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -84,11 +83,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="W"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <TextView
             android:id="@+id/Logic_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -96,11 +95,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="L"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <TextView
             android:id="@+id/Intuition_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -108,11 +107,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="I"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <TextView
             android:id="@+id/Charisma_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -120,11 +119,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="C"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <TextView
             android:id="@+id/Essence_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -132,11 +131,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="ESS"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <TextView
             android:id="@+id/Edge_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -144,11 +143,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="EDG"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <TextView
             android:id="@+id/Magic_Text"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -156,11 +155,11 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:text="M/T"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="15sp" />
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <EditText
             android:id="@+id/Body_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -173,6 +172,7 @@
 
         <EditText
             android:id="@+id/Agility_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -185,6 +185,7 @@
 
         <EditText
             android:id="@+id/Reaction_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -197,6 +198,7 @@
 
         <EditText
             android:id="@+id/Strength_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -209,6 +211,7 @@
 
         <EditText
             android:id="@+id/Will_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -221,6 +224,7 @@
 
         <EditText
             android:id="@+id/Logic_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -233,6 +237,7 @@
 
         <EditText
             android:id="@+id/Intuition_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -245,6 +250,7 @@
 
         <EditText
             android:id="@+id/Charisma_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -257,6 +263,7 @@
 
         <EditText
             android:id="@+id/Essence_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -269,6 +276,7 @@
 
         <EditText
             android:id="@+id/Edge_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -282,6 +290,7 @@
 
         <EditText
             android:id="@+id/Magic_Num"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
