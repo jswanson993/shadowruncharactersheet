@@ -7,298 +7,193 @@
     android:background="@android:color/background_dark"
     tools:context=".MainActivity">
 
-    <GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="0dp"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_columnSpan="11"
-        android:layout_marginTop="8dp"
-        android:layout_rowSpan="2"
-        android:background="@android:color/black"
-        android:columnCount="11"
-        android:paddingBottom="5dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:paddingTop="5dp"
-        android:rowCount="2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/Body_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_row="1"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="B"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <TextView
-            android:id="@+id/Agility_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="A"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <TextView
-            android:id="@+id/Reaction_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="R"
-            android:textColor="@android:color/holo_orange_dark"/>
-
-        <TextView
-            android:id="@+id/Strength_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="S"
-            android:textColor="@android:color/holo_orange_dark"/>
-
-        <TextView
-            android:id="@+id/Will_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="W"
-            android:textColor="@android:color/holo_orange_dark"/>
-
-        <TextView
-            android:id="@+id/Logic_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="L"
-            android:textColor="@android:color/holo_orange_dark"/>
-
-        <TextView
-            android:id="@+id/Intuition_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="I"
-            android:textColor="@android:color/holo_orange_dark"/>
-
-        <TextView
-            android:id="@+id/Charisma_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="C"
-            android:textColor="@android:color/holo_orange_dark"/>
-
-        <TextView
-            android:id="@+id/Essence_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="ESS"
-            android:textColor="@android:color/holo_orange_dark"/>
-
-        <TextView
-            android:id="@+id/Edge_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="EDG"
-            android:textColor="@android:color/holo_orange_dark"/>
-
-        <TextView
-            android:id="@+id/Magic_Text"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="M/T"
-            android:textColor="@android:color/holo_orange_dark"/>
-
-        <EditText
-            android:id="@+id/Body_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <EditText
-            android:id="@+id/Agility_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <EditText
-            android:id="@+id/Reaction_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <EditText
-            android:id="@+id/Strength_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <EditText
-            android:id="@+id/Will_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <EditText
-            android:id="@+id/Logic_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <EditText
-            android:id="@+id/Intuition_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <EditText
-            android:id="@+id/Charisma_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <EditText
-            android:id="@+id/Essence_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-
-        <EditText
-            android:id="@+id/Edge_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:divider="@android:color/holo_orange_dark"
+        android:showDividers="middle"
+        android:dividerPadding="5dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:divider="@android:color/holo_orange_dark"
+            android:showDividers="middle"
+            android:dividerPadding="20dp">
+            <TextView
+                android:id="@+id/Body_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
 
 
-        <EditText
-            android:id="@+id/Magic_Num"
-            style="@android:style/TextAppearance.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="0"
-            android:textColor="@android:color/holo_orange_dark" />
-    </GridLayout>
+            <TextView
+                android:id="@+id/Agility_Text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="A"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:id="@+id/Reaction_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:id="@+id/Strength_Text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="S"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:id="@+id/Will_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:id="@+id/Logic_Text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="L"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:id="@+id/Intuition_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:id="@+id/Charisma_Text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="C"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:id="@+id/Essence_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ESS"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:id="@+id/Edge_Text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="EDG"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:id="@+id/Magic_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M/T"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark" />
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/Body_Stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+
+            <EditText
+                android:id="@+id/Agility_Stat"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+            <EditText
+                android:id="@+id/Reaction_Stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/Strength_Stat"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+            <EditText
+                android:id="@+id/Will_Stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/Logic_Stat"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+            <EditText
+                android:id="@+id/Intuition_Stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/Charisma_Stat"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+            <EditText
+                android:id="@+id/Essence_Stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/Edge_Stat"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+            <EditText
+                android:id="@+id/Magic_Stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
 </android.support.constraint.ConstraintLayout>
